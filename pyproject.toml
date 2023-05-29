@@ -5,8 +5,10 @@ deploy = [
 ]
 
 [tool.pdm.scripts]
-instance_create = "pdm run mkwsgiinstance -s skel -u admin:CHANGEME -d instance1"
-instance_start = "runwsgi instance1/etc/zope.ini"
+create_instance = "pdm run mkwsgiinstance -s skel -u admin:CHANGEME -d instance1"
+start_instance = "runwsgi instance1/etc/zope.ini"
+create_relstorage_instance = "pdm run mkwsgiinstance -s skelrs -u admin:CHANGEME -d instance1"
+start_relstorage_instance = "runwsgi instance1/etc/zope.ini"
 
 
 [project]
@@ -22,6 +24,11 @@ dependencies = [
     "plone.app.iterate",
     "plone.app.upgrade",
     "Products.CMFPlacefulWorkflow",
+    ### only needed when using relstorage
+    "pyruvate>=1.2.1",
+    "relstorage",
+    "psycopg2",
+    ###
     "collective.easyform",
     "plone.gallery",
     "collective.collectionfilter",
