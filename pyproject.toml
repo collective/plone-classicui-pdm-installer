@@ -24,10 +24,10 @@ dependencies = [
     "plone.app.upgrade",
     "Products.CMFPlacefulWorkflow",
     ### only needed when using relstorage
-    "pyruvate>=1.2.1",
     "relstorage",
     "psycopg2",
     ###
+    "pyruvate>=1.2.1",
     "collective.easyform",
     "plone.gallery",
     "collective.collectionfilter",

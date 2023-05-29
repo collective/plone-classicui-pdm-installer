@@ -27,6 +27,10 @@ dependencies = [
     "plone.app.iterate",
     "plone.app.upgrade",
     "Products.CMFPlacefulWorkflow",
+    ### only needed when using relstorage
+    "relstorage",
+    "psycopg2",
+    ###
     "collective.easyform",
     "plone.gallery",
     "collective.collectionfilter",
