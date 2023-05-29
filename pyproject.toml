@@ -5,10 +5,9 @@ deploy = [
 ]
 
 [tool.pdm.scripts]
-create_instance = "pdm run mkwsgiinstance -s skel -u admin:CHANGEME -d instance1"
+create_instance = "pdm run mkwsgiinstance -s skel -d instance1"
+create_relstorage_instance = "pdm run mkwsgiinstance -s skelrs -d instance1"
 start_instance = "runwsgi instance1/etc/zope.ini"
-create_relstorage_instance = "pdm run mkwsgiinstance -s skelrs -u admin:CHANGEME -d instance1"
-start_relstorage_instance = "runwsgi instance1/etc/zope.ini"
 
 
 [project]

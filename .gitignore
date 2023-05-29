@@ -4,3 +4,5 @@
 /instance1/site.zcml
 /instance1/zope.conf
 /instance1/zope.ini
+/instance1/
+/instance2

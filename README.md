@@ -54,6 +54,26 @@ host = 127.0.0.1
 port = 8080
 ```
 
+Alternatively you can also create a RelStorage setup like this:
+
+```sh
+./venv/bin/pdm run create_relstorage_instance
+```
+
+Adjust the data base connection string in `instance1/etc/zope.conf`:
+
+```
+<zodb_db main>
+    <relstorage>
+      blob-dir $INSTANCE/var/blobstorage
+      <postgresql>
+        dsn dbname='my_plone_database' user='my_plone_db_user' host='localhost' password='SECRET'
+      </postgresql>
+    </relstorage>
+   mount-point /
+</zodb_db>
+```
+
 Start the instance
 
 ```sh
