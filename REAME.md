@@ -1,5 +1,12 @@
 # Install Plone 6 classic UI with PDM
 
+checkout this repository like this:
+
+```sh
+git clone https://github.com/collective/plone-classicui-pdm-installer.git plone6classicui
+cd plone6classicui
+```
+
 creating a venv:
 
 ```sh
