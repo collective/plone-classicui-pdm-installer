@@ -1,0 +1,30 @@
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+deploy = [
+    "cookiecutter>=2.1.1",
+]
+
+[tool.pdm.scripts]
+instance_create = "pdm run mkwsgiinstance -s skel -u admin:CHANGEME -d instance1"
+instance_start = "runwsgi instance1/etc/zope.ini"
+
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "MrTango", email = "md@derico.de"},
+]
+dependencies = [
+    "Products.CMFPlone>=6.0.4",
+    "plone.app.caching",
+    "plone.app.iterate",
+    "plone.app.upgrade",
+    "Products.CMFPlacefulWorkflow",
+    "collective.easyform",
+    "plone.gallery",
+    "collective.collectionfilter",
+]
+requires-python = ">=3.8,<3.12"
+license = {text = "GPL"}

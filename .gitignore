@@ -1,0 +1,6 @@
+/venv
+/.pdm-python
+/instance1/inituser
+/instance1/site.zcml
+/instance1/zope.conf
+/instance1/zope.ini
