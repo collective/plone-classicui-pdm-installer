@@ -46,7 +46,7 @@ Install Plone and all dependencies:
 Create a Zope instance:
 
 ```sh
-./venv/bin/pdm run instance_create
+./venv/bin/pdm run create_instance
 ```
 
 Adjust the instance port in `instance1/etc/zope.ini`
@@ -81,7 +81,7 @@ Adjust the data base connection string in `instance1/etc/zope.conf`:
 Start the instance
 
 ```sh
-./venv/bin/pdm run instance_start
+./venv/bin/pdm run start_instance
 ```
 
 In production you want to add this to something like supervisor or a systemd script.
