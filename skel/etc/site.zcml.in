@@ -17,4 +17,8 @@
   <includeOverrides files="package-includes/*-overrides.zcml" />
   <five:loadProductsOverrides />
 
+  <plone:static
+    directory="<<INSTANCE_HOME>>/resources"
+  />
+
 </configure>
