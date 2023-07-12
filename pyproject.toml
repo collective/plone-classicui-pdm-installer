@@ -18,7 +18,7 @@ authors = [
     {name = "MrTango", email = "md@derico.de"},
 ]
 dependencies = [
-    "Products.CMFPlone>=6.0.4",
+    "Products.CMFPlone>=6.0.6",
     "plone.app.caching",
     "plone.app.iterate",
     "plone.app.upgrade",
