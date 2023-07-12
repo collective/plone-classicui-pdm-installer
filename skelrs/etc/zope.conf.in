@@ -4,13 +4,13 @@
 instancehome $INSTANCE
 
 <zodb_db main>
-    <relstorage>
-      blob-dir $INSTANCE/var/blobstorage
-      <postgresql>
-        dsn dbname='my_plone_database' user='my_plone_db_user' host='localhost' password='SECRET'
-      </postgresql>
-    </relstorage>
-   mount-point /
+  <relstorage>
+    blob-dir $INSTANCE/var/blobstorage
+    <postgresql>
+      dsn dbname='my_plone_database' user='my_plone_db_user' host='localhost' password='SECRET'
+    </postgresql>
+  </relstorage>
+  mount-point /
 </zodb_db>
 
 

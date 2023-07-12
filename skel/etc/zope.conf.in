@@ -11,6 +11,7 @@ instancehome $INSTANCE
       path  $INSTANCE/var/Data.fs
     </filestorage>
   </blobstorage>
+  mount-point /
 </zodb_db>
 
 
