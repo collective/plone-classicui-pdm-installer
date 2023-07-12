@@ -18,8 +18,10 @@
   <includeOverrides files="package-includes/*-overrides.zcml" />
   <five:loadProductsOverrides />
 
+  <!-- it's recommended to use the remove the instance folder from the path here, if you have more than one instance
   <plone:static
-    directory="<<INSTANCE_HOME>>/../resources"
+    directory="<<INSTANCE_HOME>>/resources"
   />
+  -->
 
 </configure>
