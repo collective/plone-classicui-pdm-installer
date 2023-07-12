@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:meta="http://namespaces.zope.org/meta"
+    xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:five="http://namespaces.zope.org/five">
 
   <include package="Zope2.App" />
@@ -18,7 +19,7 @@
   <five:loadProductsOverrides />
 
   <plone:static
-    directory="<<INSTANCE_HOME>>/resources"
+    directory="<<INSTANCE_HOME>>/../resources"
   />
 
 </configure>
